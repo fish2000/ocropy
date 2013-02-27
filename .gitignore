@@ -7,6 +7,9 @@ flann-*
 .pynative
 flowrec
 clustrec
+
+build/*
+dist/*
 models/*
 book/*
 temp/*
