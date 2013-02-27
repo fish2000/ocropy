@@ -6,8 +6,8 @@ import tables
 
 from optparse import OptionParser
 import pygtk
-pygtk.require("2.0") 
-import gobject,gtk,gtk.glade
+pygtk.require("2.0")
+import gobject, gtk, gtk.glade
 from pylab import *
 import ocrolib
 from scipy import stats
