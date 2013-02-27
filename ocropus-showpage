@@ -7,11 +7,7 @@ parser.add_argument('-o','--output',default=None,help="save a figure instead of 
 parser.add_argument("image",default=None,nargs=1,help="input lines")
 args = parser.parse_args()
 
-import matplotlib,tables
-if args.output is None:
-    matplotlib.use("GTK")
-else: 
-    matplotlib.use("AGG")
+import matplotlib, tables
 from pylab import *
 
 figure(figsize=(9,12),dpi=args.dpi)
