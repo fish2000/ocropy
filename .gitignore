@@ -1,0 +1,14 @@
+openfst-*
+flann-*
+*.swp
+*~
+*.so
+*.pyc
+.pynative
+flowrec
+clustrec
+models/*
+book/*
+temp/*
+page/*
+deu-f/*

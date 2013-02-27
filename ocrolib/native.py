@@ -42,8 +42,8 @@ for d in range(1,4):
 class CompileError(Exception):
     pass
 
-def compile_and_find(c_string,prefix=".pynative",opt="-g -O4",libs="-lm",
-                     options="-shared -fopenmp -std=c99 -fPIC",verbose=0):
+def compile_and_find(c_string,prefix=".pynative",opt="-g",libs="-lm",
+                     options="-shared -std=c99 -fPIC",verbose=0):
     if not os.path.exists(prefix):
         os.mkdir(prefix)
     m = hashlib.md5()
