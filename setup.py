@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys,time,urllib,traceback,glob,os,os.path
+import sys, time, urllib, traceback, glob, os, os.path
 
 assert sys.version_info[0]==2 and sys.version_info[1]>=7,\
     "you must install and use OCRopus with Python version 2.7 or later, but not Python 3.x"
@@ -34,19 +34,22 @@ class DownloadCommand(Command):
                 sys.exit(1)
 
 setup(
-        name = 'ocropy',
-        version = '0.6',
-        author = "Thomas Breuel",
-        description = "The core of the OCRopus OCR system.",
-        packages = ["ocrolib"],
-        data_files=
-            [('share/ocropus', glob.glob("*.glade")),
-             ('share/ocropus', [modeldir+m for m in modelfiles]),
-             ('share/ocropus', glob.glob("models/*.lnorm")),
-             ('share/ocropus', ["models/gradient.lineest"])],
-        scripts = 
-            [c for c in glob.glob("ocropus-*") if "." not in c and "~" not in c],
-        cmdclass = {
-            "download_models" : DownloadCommand,
-            }
+        name='ocropy',
+        version='0.6',
+        author="Thomas Breuel",
+        description="The core of the OCRopus OCR system.",
+        
+        packages=["ocrolib"],
+        data_files=[
+            ('share/ocropus', glob.glob("*.glade")),
+            ('share/ocropus', [modeldir+m for m in modelfiles]),
+            ('share/ocropus', glob.glob("models/*.lnorm")),
+            ('share/ocropus', ["models/gradient.lineest"])],
+        
+        scripts=[c for c in glob.glob("ocropus-*") if "." not in c and "~" not in c],
+        cmdclass={ "download_models": DownloadCommand, },
+        
+        install_requires=[
+            'numpy', 'scipy', 'tables',
+            'PIL'],
      )
