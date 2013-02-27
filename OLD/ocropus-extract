@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import code,pickle,sys,os,re,traceback,sqlite3,warnings
 import matplotlib

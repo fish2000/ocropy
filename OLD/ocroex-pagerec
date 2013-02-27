@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import signal
 signal.signal(signal.SIGINT,lambda *args:sys.exit(1))

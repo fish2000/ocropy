@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import code,pickle,sys,os,re,ocropy
 from ocropy import dbtables
 from pylab import *

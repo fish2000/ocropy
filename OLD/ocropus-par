@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 ### Simple command line tool driving the ocropus pipeline.
 

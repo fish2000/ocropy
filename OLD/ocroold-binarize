@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # FIXME
 # -- add more detailed preprocessing options, separate out stages explicitly
