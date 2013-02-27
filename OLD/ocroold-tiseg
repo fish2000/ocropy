@@ -4,8 +4,7 @@
 
 import sys,os,re,optparse
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 import signal
 signal.signal(signal.SIGINT,lambda *args:sys.exit(1))
 from pylab import *

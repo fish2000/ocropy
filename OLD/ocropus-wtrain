@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 import code,pickle,sys,os,re,traceback
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from optparse import OptionParser
 from pylab import *
 import ocrolib

@@ -2,8 +2,7 @@
 
 import sys,os,re,glob,math,glob,signal,traceback
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 import random as pyrandom
 from optparse import OptionParser
 from pylab import *

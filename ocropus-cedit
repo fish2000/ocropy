@@ -3,8 +3,7 @@
 import sys,pickle,os,glob,traceback,sqlite3,scipy,time
 import matplotlib
 import tables
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from optparse import OptionParser
 import pygtk
 pygtk.require("2.0") 

@@ -2,8 +2,7 @@
 
 import code,pickle,sys,os,signal,re,traceback
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from pylab import *
 from optparse import OptionParser
 

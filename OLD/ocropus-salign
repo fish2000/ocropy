@@ -6,8 +6,7 @@
 
 import sys,os,re,glob,math,glob,signal,traceback,sqlite3
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from scipy.ndimage import interpolation,measurements
 from pylab import *
 from optparse import OptionParser

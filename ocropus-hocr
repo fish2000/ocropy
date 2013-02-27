@@ -5,8 +5,7 @@
 import __builtin__ as python
 import sys,os,re,optparse,shutil,glob,argparse
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 import signal
 signal.signal(signal.SIGINT,lambda *args:sys.exit(1))
 from matplotlib import patches

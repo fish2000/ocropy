@@ -11,8 +11,7 @@ import argparse
 import multiprocessing
 
 import matplotlib
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from matplotlib import patches
 import pylab
 

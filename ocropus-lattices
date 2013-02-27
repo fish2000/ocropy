@@ -5,8 +5,7 @@
 import sys,os,re,glob,math,glob,signal,traceback,codecs,time
 import fcntl
 import matplotlib,tables
-if "DISPLAY" not in os.environ: matplotlib.use("AGG")
-else: matplotlib.use("GTK")
+
 from scipy.ndimage import interpolation
 from pylab import *
 from optparse import OptionParser
