@@ -1,5 +1,5 @@
 from pylab import *
-from scipy.ndimage import filters,morphology,measurements
+from scipy.ndimage import filters, morphology, measurements
 import common,morph
 from toplevel import *
 

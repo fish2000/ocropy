@@ -1,7 +1,7 @@
 import copy as pycopy
 from collections import Counter,namedtuple,defaultdict
 from pylab import *
-from scipy.ndimage import measurements,morphology
+from scipy.ndimage import measurements, morphology, filters
 import common as ocrolib
 from ocrolib import showgrid
 import morph,lineseg,lineproc,sl
